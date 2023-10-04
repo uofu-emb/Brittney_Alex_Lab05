@@ -12,6 +12,8 @@
 struct gpio_callback callback;
 const struct device *dev_in, *dev_out;
 
+K_MSGQ_DEFINE(request, sizeof(struct request_msg), 32, 4);
+
 void pin_interrupt(const struct device *port,
                    struct gpio_callback *cb,
                    gpio_port_pins_t pins_)
