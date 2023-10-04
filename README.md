@@ -6,7 +6,7 @@ In this lab we were testing the delay with RTC and timers with the use of delay 
 
 $T = 2.193 ms$\
 $f = 456.277$\
-$duty = 49.99 \% $
+$duty = 49.99$%
 
 the jitter for our stm32 is 0.2 ms per 2 ms, so for hour we lose 0.72 in an hour.\
 the Equation we use is $.0002 * 60 * 60$.
